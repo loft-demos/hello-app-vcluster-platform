@@ -43,10 +43,6 @@ service:
   port: 8080
 ingress:
   enabled: true
-  annotations:
-    kubernetes.io/tls-acme: 'true'
-    nginx.ingress.kubernetes.io/ssl-passthrough: 'false'
-    nginx.ingress.kubernetes.io/backend-protocol: 'HTTP'
   hosts:
     - host: hello-app-vcluster-platform-vcluster-platform.us.demo.dev
       paths:
